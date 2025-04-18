@@ -1,0 +1,128 @@
+
+#cartpage
+{
+    background-color: rgb(141, 243, 141);
+    padding: 20px;
+}
+#cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+/* Individual cart item */
+.cart-item {
+    flex: 1 1 calc(25% - 20px); /* 25% width minus the gap */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Cart item image */
+.cart-item-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cart item title */
+.cart-item-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Cart item price */
+.cart-item-price {
+    color: #333;
+    font-weight: bold;
+}
+/* styles.css */
+
+/* Style for the "BUY NOW" button */
+#buy-now-button {
+    position: fixed; /* Fix the button's position relative to the viewport */
+    right: 20px; /* Distance from the right edge */
+    bottom: 20px; /* Distance from the bottom edge */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #20b95b; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000; /* Ensure the button is on top of other elements */
+}
+
+/* Optional: Add hover effect */
+#buy-now-button:hover {
+    background-color: #e63900; /* Darker shade on hover */
+}
+
+
+/* Hover effect for cart items */
+.cart-item:hover {
+    transform: scale(1.02); /* Slightly enlarge the item */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the "Buy" button within cart items */
+.cart-item .buy-button:hover {
+    background-color: #39c563; /* Darker teal background on hover */
+    color: rgb(102, 205, 124); /* Ensure text is readable */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the "BUY NOW" button */
+#buy-now-button:hover {
+    background-color: #d14a4a; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+/* styles.css */
+
+/* Style for the remove "x" symbol */
+.remove-item {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+}
+
+/* Ensure cart items are positioned relative to contain the "x" symbol */
+.cart-item {
+    position: relative;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+/* styles.css */
+
+/* Style for the "x" remove button */
+.remove-button {
+    background-color: red; /* Red background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Circular shape */
+    width: 30px; /* Width of the button */
+    height: 30px; /* Height of the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-flex; /* Align text in the center */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    margin-left: 10px; /* Space from other elements */
+}
+
+/* Optional: Add hover effect */
+.remove-button:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+
+
